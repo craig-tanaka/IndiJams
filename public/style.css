@@ -5,10 +5,23 @@
 html{
     background-color: #f4f4f2;
     color: #495464;
+    font-family: 'Raleway',
+    sans-serif;
 }
 
 
-
+/* #region Sidebar */
+#site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+#site-subtitle{
+    font-weight: 300;
+    display: block;
+    /* word-spacing: 1px; */
+    margin-top: -5px;
+}
+/* #endregion Sidebar */
 
 
 
