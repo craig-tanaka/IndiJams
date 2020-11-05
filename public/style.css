@@ -82,12 +82,22 @@ main{
     font-family: 'Raleway',
     sans-serif;
     margin-right: 2rem;
-    background: #495464;
+    background: #495467;
     color: #f4f4f2;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: 300;
+    outline: none;
 }
+    #login-btn:hover{
+        background: #f4f4f2;
+        color: #495464;
+        border: 1px solid #495464;
+    }
+    #login-btn:active{
+        box-shadow: inset 1px 1px 2px #49546461;
+    }
 
 
 /* #endregion main styling */
