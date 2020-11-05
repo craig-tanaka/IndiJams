@@ -1,3 +1,62 @@
+*{
+    margin: 0;
+}
+
 html{
     background-color: #f4f4f2;
+    color: #495464;
 }
+
+
+
+
+
+
+
+/* #region Footer / Player */
+#player{
+    position: absolute;
+    bottom: 0;
+    background: #e8e8e8;
+}
+
+
+#player-progress{
+    width: 100vw;
+    /* padding: 0; */
+}
+
+
+#player-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+#track-info-cont{
+    display: flex;
+    align-items: center;
+}
+.track-art{
+    width: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.player-control-img{
+    width: 30px;
+    margin-right: 10px;
+    opacity: .7;
+}
+#player-volume-controls-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* #endregion Footer / Player */
+
+
+
+
