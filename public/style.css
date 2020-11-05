@@ -36,6 +36,51 @@ body{
 /* #endregion Sidebar */
 
 
+/* #region main styling */
+main{
+    padding: 1.5rem;
+    /* padding-top: 2rem; */
+    em; */
+}
+
+#main-header{
+    display: flex;
+    align-items: center;
+}
+
+/* __Search__ */
+#search-cont {
+    width: 25rem;
+    background: #bbbfca;
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+#search-vector {
+    width: 15px;
+    margin-right: 3px;
+}
+#search-input{
+
+border: none;
+
+background: transparent;
+
+width: -webkit-fill-available;
+
+font-family: 'Raleway', sans-serif;
+
+font-weight: 300;
+
+font-size: 16px;
+}
+/* __Search__ */
+
+#login-btn{}
+
+
+/* #endregion main styling */
 
 
 /* #region Footer / Player */
