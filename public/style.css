@@ -17,7 +17,7 @@ body{
 
 /* #region Aside/ Sidebar */
 #sidebar{
-    width: 11rem;
+    width: 13rem;
     box-shadow: 1px 0 2px 0 #bbbfca91;
     height: 100vh;
     padding: 1rem;
@@ -39,45 +39,55 @@ body{
 /* #region main styling */
 main{
     padding: 1.5rem;
-    /* padding-top: 2rem; */
-    em; */
+    width: -webkit-fill-available;
 }
 
 #main-header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 /* __Search__ */
 #search-cont {
-    width: 25rem;
+    width: 80%;
     background: #bbbfca;
-    padding: .5rem .75rem;
-    border-radius: 5px;
+    padding: .75rem 1rem;
+    border-radius: 15px;
     display: flex;
     align-items: center;
 }
 #search-vector {
-    width: 15px;
-    margin-right: 3px;
+        width: 20px;
+        margin-right: 3px;
+        opacity: .7;
+        cursor: pointer;
 }
 #search-input{
-
-border: none;
-
-background: transparent;
-
-width: -webkit-fill-available;
-
-font-family: 'Raleway', sans-serif;
-
-font-weight: 300;
-
-font-size: 16px;
+    border: none;
+    background: transparent;
+    width: -webkit-fill-available;
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    outline: none;
 }
 /* __Search__ */
 
-#login-btn{}
+#login-btn{
+    padding: .8rem 1rem;
+    font-size: 16px;
+    font-family: 'Raleway',
+    sans-serif;
+    margin-right: 2rem;
+    background: #495464;
+    color: #f4f4f2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 
 /* #endregion main styling */
