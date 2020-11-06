@@ -33,6 +33,24 @@ body{
     /* word-spacing: 1px; */
     margin-top: -5px;
 }
+
+/* ---Nav--- */
+.nav-group{
+    list-style: none;
+    margin-top: 3em;
+}
+.nav-group-header, .nav-group-item{
+    margin-bottom: 1rem;
+}
+.nav-group-header{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: -.5rem;
+    opacity: .3;
+}
+.nav-group-item{
+    font-weight: 300;
+}
 /* #endregion Sidebar */
 
 
