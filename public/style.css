@@ -137,7 +137,6 @@ main{
     /* ___Main_Body */
 #main-body-cont{
     display: flex;
-    align-items: center;
     width: 100%;
     padding-top: 2rem;
 }
@@ -156,7 +155,7 @@ main{
 }
 #featured-div-body{
     padding: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     background: #e8e8e8;
     border-radius: 5px;
     display: flex;
@@ -193,7 +192,7 @@ main{
     display: flex;
     justify-content: space-between;
     /* padding: 2rem 0; */
-    margin-right: 1rem;
+    margin-right: 2rem;
     /* background: #e8e8e8; */
     border-radius: 5px;
 }
@@ -214,6 +213,47 @@ main{
     font-weight: 300;
 }
 /*--- Recently Added Sec--- */
+
+
+/*--- Trending Now Sec--- */
+    #trending-now-div-header{
+        opacity: .7;
+    }
+    .trending-now-album{
+        display: flex;
+        align-items: center;
+        width:90%;
+        background-color: #e8e8e8;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 1rem 0;
+        position: relative;
+        border-radius: 15px;
+    }
+    .trending-now-album-vector{
+        width: 2rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .trending-now-album-info{
+        margin-right: 1rem;
+    }
+    .trending-now-album-name{
+        font-weight: bold;
+    }
+    .trending-now-album-artist{
+        font-weight: 300;
+        font-size: .9em;
+    }
+    .trending-now-additional-info{
+        position: absolute;
+        right: 0;
+        margin-right: 1rem;
+        font-weight: 300;
+        font-size: .9em;
+    }
+/*--- Trending Now Sec--- */
 
 /* #endregion main styling */
 
