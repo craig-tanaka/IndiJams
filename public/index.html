@@ -2,176 +2,198 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Firebase Hosting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/8.0.0/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/8.0.0/firebase-auth.js"></script>
-  <script defer src="/__/firebase/8.0.0/firebase-database.js"></script>
-  <script defer src="/__/firebase/8.0.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/8.0.0/firebase-storage.js"></script>
-  <script defer src="/__/firebase/8.0.0/firebase-analytics.js"></script>
-  <script defer src="/__/firebase/8.0.0/firebase-remote-config.js"></script>
-  <script defer src="/__/firebase/8.0.0/firebase-performance.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.0.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-performance.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
-  <link rel="stylesheet" href="style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Raleway:wght@300;500&display=swap"
-    rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Raleway:wght@300;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-  <aside id="sidebar">
-    <div id="site-brand">
-      <h1 id="site-title">IndiJams</h1>
-      <small id="site-subtitle">The Best Tunes in the South</small>
-    </div>
-    <nav id="sidebar-nav">
-      <ul class="nav-group">
-        <li class="nav-group-header">Music</li>
-        <li class="nav-group-item" id="nav-home-link">
-          <img src="./images//home-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Home</span>
-        </li>
-        <li class="nav-group-item" id="nav-songs-link">
-          <img src="./images//music-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Songs</span>
-        </li>
-        <li class="nav-group-item" id="nav-albums-link">
-          <img src="./images//album-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Albums</span>
-        </li>
-        <li class="nav-group-item" id="nav-artist-link">
-          <img src="./images//artist-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Artists</span>
-        </li>
-      </ul>
-      <ul class="nav-group">
-        <li class="nav-group-header">Playlists</li>
-        <li class="nav-group-item" id="nav-featured-link">
-          <img src="./images//playlist-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Featured</span>
-        </li>
-        <li class="nav-group-item" id="nav-hot-link">
-          <img src="./images//playlist-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Hot Now</span>
-        </li>
-        <li class="nav-group-item" id="nav-new-link">
-          <img src="./images//playlist-vector.png" class="nav-item-img">
-          <span class="nav-item-text">New</span>
-        </li>
-        <li class="nav-group-item" id="nav-rising-link">
-          <img src="./images//playlist-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Rising</span>
-        </li>
-        <li class="nav-group-item" id="nav-your-playlists-link">
-          <img src="./images//playlist-vector.png" class="nav-item-img">
-          <span class="nav-item-text">Your Playlists</span>
-        </li>
-      </ul>
-    </nav>
+    <aside id="sidebar">
+        <div id="site-brand">
+            <h1 id="site-title">IndiJams</h1>
+            <small id="site-subtitle">The Best Tunes in the South</small>
+        </div>
+        <nav id="sidebar-nav">
+            <ul class="nav-group">
+                <li class="nav-group-header">Music</li>
+                <li class="nav-group-item" id="nav-home-link">
+                    <img src="./images//home-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Home</span>
+                </li>
+                <li class="nav-group-item" id="nav-songs-link">
+                    <img src="./images//music-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Songs</span>
+                </li>
+                <li class="nav-group-item" id="nav-albums-link">
+                    <img src="./images//album-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Albums</span>
+                </li>
+                <li class="nav-group-item" id="nav-artist-link">
+                    <img src="./images//artist-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Artists</span>
+                </li>
+            </ul>
+            <ul class="nav-group">
+                <li class="nav-group-header">Playlists</li>
+                <li class="nav-group-item" id="nav-featured-link">
+                    <img src="./images//playlist-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Featured</span>
+                </li>
+                <li class="nav-group-item" id="nav-hot-link">
+                    <img src="./images//playlist-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Hot Now</span>
+                </li>
+                <li class="nav-group-item" id="nav-new-link">
+                    <img src="./images//playlist-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">New</span>
+                </li>
+                <li class="nav-group-item" id="nav-rising-link">
+                    <img src="./images//playlist-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Rising</span>
+                </li>
+                <li class="nav-group-item" id="nav-your-playlists-link">
+                    <img src="./images//playlist-vector.png" class="nav-item-img">
+                    <span class="nav-item-text">Your Playlists</span>
+                </li>
+            </ul>
+        </nav>
 
-    <p id="nav-copyright">© IndiJams 2020</p>
-  </aside>
+        <p id="nav-copyright">© IndiJams 2020</p>
+    </aside>
 
-  
-  <main>
-    <header id="main-header">
-     <div id="search-cont">
-       <img src="./images/search-vector.png" alt="search" id="search-vector">
-       <input type="text" name="search" id="search-input" placeholder="Search For a Song, Album, Artist etc"
-         autocomplete="off">
-     </div>
-      <button id="login-btn">Login</button>
-    </header>
-    
-    <div id="main-body-cont">
-      <section id="main-main-section">
-        <div id="featured-div">
-          <h2 id="featured-div-header">Featured Albums</h2>
-          <div id="featured-div-body">
-            <img src="./images/album covers/Shoot for the Stars Aim for the Moon_Pop Smoke.jpg" alt=""
-              id="featured-album-cover-art">
-            <div id="featured-album-text-cont">
-              <h3 id="featured-album-name">Shoot For The Stars, Aim For The Moon</h3>
-              <p id="featured-album-artist">Pop Smoke</p>
-              <p id="featured-album-description">Shoot for the Stars, Aim for the Moon is the debut studio album by
-                American rapper Pop Smoke, and first posthumous project following his murder from a home invasion on
-                February 19, 2020.</p>
+
+    <main>
+        <header id="main-header">
+            <div id="search-cont">
+                <img src="./images/search-vector.png" alt="search" id="search-vector">
+                <input type="text" name="search" id="search-input" placeholder="Search For a Song, Album, Artist etc"
+                    autocomplete="off">
             </div>
-          </div>
+            <button id="login-btn">Login</button>
+        </header>
+
+        <div id="main-body-cont">
+            <section id="main-main-section">
+                <div id="featured-div">
+                    <h2 id="featured-div-header">Featured Albums</h2>
+                    <div id="featured-div-body">
+                        <img src="./images/album covers/Shoot for the Stars Aim for the Moon_Pop Smoke.jpg" alt=""
+                            id="featured-album-cover-art">
+                        <div id="featured-album-text-cont">
+                            <h3 id="featured-album-name">Shoot For The Stars, Aim For The Moon</h3>
+                            <p id="featured-album-artist">Pop Smoke</p>
+                            <p id="featured-album-description">Shoot for the Stars, Aim for the Moon is the debut studio
+                                album by
+                                American rapper Pop Smoke, and first posthumous project following his murder from a home
+                                invasion on
+                                February 19, 2020.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="recently-added-div">
+                    <h2 id="recently-added-div-header">Recently Added</h2>
+                    <div id="recently-added-div-body">
+                        <div class="recently-added-album">
+                            <img src="./images/album covers/blame-it-on-baby.jpg" class="recenty-added-album-img">
+                            <p class="recently-added-album-name">Blame It On Baby</p>
+                            <p class="recently-added-album-artist">DaBaby</p>
+                        </div>
+                        <div class="recently-added-album">
+                            <img src="./images/album covers/welcome-to-the-o-block.jpg"  class="recenty-added-album-img">
+                            <p class="recently-added-album-name">Welcome To The O</p>
+                            <p class="recently-added-album-artist">King Von</p> 
+                        </div>
+                        <div class="recently-added-album">
+                            <img src="./images/album covers/wunna.webp"  class="recenty-added-album-img">
+                            <p class="recently-added-album-name">Wunna</p>
+                            <p class="recently-added-album-artist">Gunna</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-side-section">
+                Trending Now
+                Your Fav Albums
+            </section>
         </div>
-        Recently Added
-      </section>
-      <section id="main-side-section">
-        Trending Now
-        Your Fav Albums
-      </section>
-    </div>
-  </main>
+    </main>
 
-  <footer id="player">
-    <progress id="player-progress" value=".3"></progress>
-    <div id="player-controls">
-      <div id="track-info-cont">
-        <img src="./images/player album art.jfif" alt="" class="track-art">
+    <footer id="player">
+        <progress id="player-progress" value=".3"></progress>
+        <div id="player-controls">
+            <div id="track-info-cont">
+                <img src="./images/player album art.jfif" alt="" class="track-art">
 
-        <div id="track-info-info">
-          <p id="player-track-name">Deep Pockets</p>
-          <p id="player-track-artists">Drake</p>
+                <div id="track-info-info">
+                    <p id="player-track-name">Deep Pockets</p>
+                    <p id="player-track-artists">Drake</p>
+                </div>
+            </div>
+
+            <div id="player-controls-controls">
+                <img src="./images/repeat-vector.png" alt="repeat" class="player-control-img">
+                <img src="./images/prev-vector.png" alt="previous" class="player-control-img">
+                <img src="./images/play-vector.png" alt="play" class="player-control-img">
+                <img src="./images/next-vector.png" alt="next" class="player-control-img">
+                <img src="./images/shuffle-vector.png" alt="shuffle" class="player-control-img">
+            </div>
+
+            <div id="player-volume-controls-container">
+                <img src="./images/volume-vector.png" alt="volume control" class="player-control-img">
+                <progress id="player-volume-control" value=".9"></progress>
+            </div>
+
+            <div id="player-additional-controls-cont">
+                <img src="./images/favorite-vector.png" alt="Add to Favorites" class="player-control-img">
+                <img src="./images/add-to-playlist-vector.png" alt="Add to Playlist" class="player-control-img">
+                <img src="./images/download-vector.png" alt="Download Track" class="player-control-img">
+            </div>
         </div>
-      </div>
-
-      <div id="player-controls-controls">
-        <img src="./images/repeat-vector.png" alt="repeat" class="player-control-img">
-        <img src="./images/prev-vector.png" alt="previous" class="player-control-img">
-        <img src="./images/play-vector.png" alt="play" class="player-control-img">
-        <img src="./images/next-vector.png" alt="next" class="player-control-img">
-        <img src="./images/shuffle-vector.png" alt="shuffle" class="player-control-img">
-      </div>
-
-      <div id="player-volume-controls-container">
-        <img src="./images/volume-vector.png" alt="volume control" class="player-control-img">
-        <progress id="player-volume-control" value=".9"></progress>
-      </div>
-
-      <div id="player-additional-controls-cont">
-        <img src="./images/favorite-vector.png" alt="Add to Favorites" class="player-control-img">
-        <img src="./images/add-to-playlist-vector.png" alt="Add to Playlist" class="player-control-img">
-        <img src="./images/download-vector.png" alt="Download Track" class="player-control-img">
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-      // // The Firebase SDK is initialized and available here!
-      //
-      // firebase.auth().onAuthStateChanged(user => { });
-      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-      // firebase.messaging().requestPermission().then(() => { });
-      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-      // firebase.analytics(); // call to activate
-      // firebase.analytics().logEvent('tutorial_completed');
-      // firebase.performance(); // call to activate
-      //
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+            // // The Firebase SDK is initialized and available here!
+            //
+            // firebase.auth().onAuthStateChanged(user => { });
+            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+            // firebase.messaging().requestPermission().then(() => { });
+            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+            // firebase.analytics(); // call to activate
+            // firebase.analytics().logEvent('tutorial_completed');
+            // firebase.performance(); // call to activate
+            //
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-      try {
-        let app = firebase.app();
-      } catch (e) {
-        console.error(e);
-      }
-    });
-  </script>
+            try {
+                let app = firebase.app();
+            } catch (e) {
+                console.error(e);
+            }
+        });
+    </script>
 </body>
 
 </html>
