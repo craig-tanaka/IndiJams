@@ -182,7 +182,7 @@ main{
 
 /*--- Recently Added Sec--- */
 #recently-added-div{
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 #recently-added-div-header{
     margin-bottom: .75rem;
@@ -254,6 +254,44 @@ main{
         font-size: .9em;
     }
 /*--- Trending Now Sec--- */
+
+
+/*--- Popular Artsits Sec--- */
+#popular-artists-div{
+    margin-top: 3rem;
+}
+#popular-artists-div-header{
+    opacity: .7;
+}
+.popular-artist{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.popular-artist-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.popular-artist-name{
+    font-weight: bold;
+}
+.popular-artist-followers{
+    font-weight: 300;
+    font-size: .8em;
+}
+.popular-artist-dots {
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    opacity: .3;
+    width: 1.5rem;
+}
+/*--- Popular Artsits Sec--- */
 
 /* #endregion main styling */
 
