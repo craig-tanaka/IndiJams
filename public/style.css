@@ -325,6 +325,13 @@ main{
     display: flex;
     align-items: center;
 }
+#player-track-name{
+    font-weight: bold;
+}
+#player-track-artists{
+    font-size: .9em;
+    font-weight: 300;
+}
 .track-art{
     width: 50px;
     object-fit: contain;
@@ -332,7 +339,7 @@ main{
     border-radius: 5px;
 }
 .player-control-img{
-    width: 30px;
+    width: 27px;
     margin-right: 10px;
     opacity: .7;
 }
