@@ -180,6 +180,30 @@ main{
 }
 /*--- Featured Album Sec--- */
 
+
+/*--- Featured Aritist Sec--- */
+
+/*--- Masonry Styling--- */
+.grid-item {
+    --masonry-height: 100px;
+    --masonry-width: 100px;
+    float: left;
+    width: var(--masonry-width);
+    height: var(--masonry-height);
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+    box-sizing: border-box;
+}
+
+.grid-item--width2 {
+    width: calc(var(--masonry-width) * 2);
+}
+
+.grid-item--height2 {
+    height: calc(var(--masonry-height) * 2);
+}
+/*--- Featured Aritist Sec--- */
+
+
 /*--- Recently Added Sec--- */
 #recently-added-div{
     margin-top: 4rem;

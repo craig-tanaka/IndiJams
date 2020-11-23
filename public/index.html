@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <!-- TODO: Show error message on fialure to load firebase scripts -->
+<!-- TODO: use more masonry features  -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +20,13 @@
     <script defer src="/__/firebase/8.0.0/firebase-performance.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Masonry library for grid layouts -->
+    <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!-- WebApp Logic -->
     <script defer src="./index.js"></script>
+
 
     <link rel="stylesheet" href="style.css">
     <link
@@ -94,41 +102,35 @@
 
         <div id="main-body-cont">
             <section id="main-main-section">
-                <div id="featured-div">
+                <div class="featured-div">
                     <h2 id="featured-div-header">Featured Albums</h2>
+                    
                     <div id="featured-div-body">
                         <img src="./images/album covers/Shoot for the Stars Aim for the Moon_Pop Smoke.jpg" alt=""
                             id="featured-album-cover-art">
                         <div id="featured-album-text-cont">
                             <h3 id="featured-album-name">Shoot For The Stars, Aim For The Moon</h3>
                             <p id="featured-album-artist">Pop Smoke</p>
-                            <p id="featured-album-description">Shoot for the Stars, Aim for the Moon is the debut studio
-                                album by
-                                American rapper Pop Smoke, and first posthumous project following his murder from a home
-                                invasion on
-                                February 19, 2020.</p>
+                            <p id="featured-album-description">Shoot for the Stars, Aim for the Moon is the debut studio album by American rapper Pop Smoke, and first posthumous project following his murder from a home invasion on February 19, 2020.</p>
                         </div>
                     </div>
-                </div>
 
-                <div id="recently-added-div">
-                    <h2 id="recently-added-div-header">Recently Added</h2>
-                    <div id="recently-added-div-body">
-                        <div class="recently-added-album">
-                            <img src="./images/album covers/blame-it-on-baby.jpg" class="recenty-added-album-img">
-                            <p class="recently-added-album-name">Blame It On Baby</p>
-                            <p class="recently-added-album-artist">DaBaby</p>
-                        </div>
-                        <div class="recently-added-album">
-                            <img src="./images/album covers/welcome-to-the-o-block.jpg"  class="recenty-added-album-img">
-                            <p class="recently-added-album-name">Welcome To The O</p>
-                            <p class="recently-added-album-artist">King Von</p> 
-                        </div>
-                        <div class="recently-added-album">
-                            <img src="./images/album covers/wunna.webp"  class="recenty-added-album-img">
-                            <p class="recently-added-album-name">Wunna</p>
-                            <p class="recently-added-album-artist">Gunna</p>
-                        </div>
+                    <div class="grid other-featured-artists">
+                        <div class="grid-item grid-item--height2">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item grid-item--width2">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item grid-item--width2">5</div>
+                        <div class="grid-item">7</div>
+                        <div class="grid-item grid-item--width2">8</div>
+                        <div class="grid-item">10</div>
+                        <div class="grid-item">13</div>
+                        <div class="grid-item grid-item--height2">6</div>
+                        <div class="grid-item grid-item--height2">9</div>
+                        <div class="grid-item grid-item--width2">11</div>
+                        <div class="grid-item grid-item--height2">12</div>
+                        <div class="grid-item grid-item--width2">14</div>
+                        <div class="grid-item grid-item--height2">15</div>
                     </div>
                 </div>
             </section>
@@ -137,7 +139,7 @@
                     <h2 id="trending-now-div-header">Trending Now</h2>
                     <div id="trending-div-body">
                         <div class="trending-now-album">
-                            <img src="./images/play-now-trending-vector.png"  class="trending-now-album-vector">
+                            <img src="./images/play-now-trending-vector.png" class="trending-now-album-vector">
                             <div class="trending-now-album-info">
                                 <p class="trending-now-album-name">
                                     Legends Never Die
@@ -151,7 +153,7 @@
                             </p>
                         </div>
                         <div class="trending-now-album">
-                            <img src="./images/play-now-trending-vector.png"  class="trending-now-album-vector">
+                            <img src="./images/play-now-trending-vector.png" class="trending-now-album-vector">
                             <div class="trending-now-album-info">
                                 <p class="trending-now-album-name">
                                     Savage Mode II
@@ -165,7 +167,7 @@
                             </p>
                         </div>
                         <div class="trending-now-album">
-                            <img src="./images/play-now-trending-vector.png"  class="trending-now-album-vector">
+                            <img src="./images/play-now-trending-vector.png" class="trending-now-album-vector">
                             <div class="trending-now-album-info">
                                 <p class="trending-now-album-name">
                                     My Turn
@@ -187,7 +189,7 @@
                             <img src="./images/artist pics/Chance_The_Rapper.jpg" class="popular-artist-img">
                             <div class="popular-artist-info">
                                 <p class="popular-artist-name">Chance The Rapper</p>
-                                <p class="popular-artist-followers">12.3M  Followers</p>
+                                <p class="popular-artist-followers">12.3M Followers</p>
                             </div>
                             <img src="./images/dots-horizontal-vector.png" alt="options" class="popular-artist-dots">
                         </div>
