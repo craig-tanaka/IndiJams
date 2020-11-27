@@ -193,6 +193,7 @@ main{
     /* border: 2px solid hsla(0, 0%, 0%, 0.5); */
     box-sizing: border-box;
     overflow: hidden;
+    position: relative;
 }
 
 .grid-item--width2 {
@@ -211,6 +212,43 @@ main{
     width: 100%;
     /* padding: 0; */
 }
+
+.featured-artist-artist__text-cont{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #5491e68f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: hue-rotate(45deg);
+    color: white;
+    opacity: 0;
+    transition: opacity 600ms;
+}
+        .featured-artist-artist__text-cont:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+.featured-artist-artist__artist-descrip{
+    font-weight: 300;
+    font-size: .9em;
+    margin: 0;
+    pointer-events: none;
+}
+
+.featured-artist-artist__artist-title{
+    pointer-events: none;
+    font-weight: 500;
+    font-family: 'Playfair Display';
+}
+
+
+
 /*--- Featured Aritist Sec--- */
 
 
