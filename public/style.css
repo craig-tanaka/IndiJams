@@ -185,13 +185,14 @@ main{
 
 /*--- Masonry Styling--- */
 .grid-item {
-    --masonry-height: 100px;
-    --masonry-width: 100px;
+    --masonry-height: 200px;
+    --masonry-width: 200px;
     float: left;
     width: var(--masonry-width);
     height: var(--masonry-height);
-    border: 2px solid hsla(0, 0%, 0%, 0.5);
+    /* border: 2px solid hsla(0, 0%, 0%, 0.5); */
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .grid-item--width2 {
@@ -200,6 +201,15 @@ main{
 
 .grid-item--height2 {
     height: calc(var(--masonry-height) * 2);
+}
+
+
+.featured-artist-artist{
+    object-fit: cover;
+    height: 100%;
+    object-position: center;
+    width: 100%;
+    /* padding: 0; */
 }
 /*--- Featured Aritist Sec--- */
 
