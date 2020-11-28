@@ -4,9 +4,9 @@
 
 html{
     background-image: url('./images/background.png');
-    background-size: 250px;
-    background-color: #1880901f;
-    background-blend-mode: multiply;
+    background-size: 300px;
+    background-color: #3f85b712;
+    background-blend-mode: soft-light;
     color: #495464;
     font-family: 'Raleway', arial;
 }
@@ -58,6 +58,7 @@ body{
     font-weight: 300;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .nav-item-img{
     width: 20px;
@@ -98,13 +99,13 @@ main{
 /* #region __Search__ */
 #search-cont {
     width: 80%;
-    background: #476fdc4f;
-    backdrop-filter: blur(2px);
+    background: #1e58bf12;
+    backdrop-filter: blur(1px);
     padding: .75rem 1rem;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    border: 2px solid #3c639d;
+    border: 2px solid #3f86b8;
 }
 #search-vector {
         width: 20px;
@@ -134,7 +135,7 @@ main{
     margin-right: 2rem;
     background: #4954675e;
     color: #f4f4f2;
-    border: 2px solid #3c639d;
+    border: 2px solid #3f86b8;
     box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer;
@@ -238,7 +239,8 @@ main{
 #featured-div-body{
     padding: 1rem;
     margin-right: 2rem;
-    background: #e8e8e8;
+    background: #1e58bf12;
+    backdrop-filter: blur(1px);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -376,7 +378,8 @@ main{
         display: flex;
         align-items: center;
         width:90%;
-        background-color: #e8e8e8;
+        background-color: #a8c2da29;
+        backdrop-filter: blur(1px);
         margin-top: 1rem;
         margin-left: 1rem;
         padding: 1rem 0;
@@ -457,10 +460,10 @@ main{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #0a2c3ed9;
+    background: #1c6084ad;
     backdrop-filter: blur(3px);
     color: #a8cefde3;
-    box-shadow: 4px 0 2px 0 #022030fa;
+    box-shadow: inset 0px 2px 6px 0 #0220305e;
 }
 
 
