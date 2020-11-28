@@ -1,7 +1,7 @@
+// Todo: Create view setters that chahge the backgrounds and replace html when a view is changed
 
-    
 
-    
+
 // Masonry Grid Initialization
 var msnry = new Masonry(elem, {
     // options

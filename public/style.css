@@ -3,7 +3,10 @@
 }
 
 html{
-    background-color: #f4f4f2;
+    background-image: url('./images/background.png');
+    background-size: 250px;
+    background-color: #1880901f;
+    background-blend-mode: multiply;
     color: #495464;
     font-family: 'Raleway', arial;
 }
@@ -16,10 +19,13 @@ body{
 /* #region Aside/ Sidebar */
 #sidebar{
     width: 15rem;
-    box-shadow: 1px 0 2px 0 #bbbfca91;
+    box-shadow: 1px 0 10px 3px #7fb0c773;
     height: 100vh;
     padding: 1rem;
     box-sizing: border-box;
+    background-color: #3d84b7fa;
+    color: #b5d6fd;
+    backdrop-filter: blur(1px);
 }
 
 #site-title {
@@ -43,10 +49,10 @@ body{
     margin-bottom: 1.5rem;
 }
 .nav-group-header{
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.1em;
     margin-left: -.5rem;
-    opacity: .3;
+    opacity: 0.5;
 }
 .nav-group-item{
     font-weight: 300;
@@ -72,6 +78,13 @@ body{
 main{
     padding: 1.5rem;
     width: -webkit-fill-available;
+    background-image: url('./images/home images/pexels-eric-esma-894156.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #1c71cac7;
+    background-blend-mode: luminosity;
+    position: relative;
 }
 
 #main-header{
@@ -82,19 +95,21 @@ main{
 }
 
 
-/* __Search__ */
+/* #region __Search__ */
 #search-cont {
     width: 80%;
-    background: #bbbfca;
+    background: #476fdc4f;
+    backdrop-filter: blur(2px);
     padding: .75rem 1rem;
     border-radius: 15px;
     display: flex;
     align-items: center;
+    border: 2px solid #3c639d;
 }
 #search-vector {
         width: 20px;
-        margin-right: 3px;
-        opacity: .7;
+        margin-right: 7px;
+        /* opacity: .7; */
         cursor: pointer;
 }
 #search-input{
@@ -106,18 +121,21 @@ main{
     font-weight: 300;
     font-size: 16px;
     outline: none;
+    color: #ffffffc7;
 }
-/* __Search__ */
+/*  #endregion __Search__ */
 
+/* #region ___Login_Buttpn___ */
 #login-btn{
     padding: .8rem 1rem;
     font-size: 16px;
     font-family: 'Raleway',
     sans-serif;
     margin-right: 2rem;
-    background: #495467;
+    background: #4954675e;
     color: #f4f4f2;
-    border: 1px solid transparent;
+    border: 2px solid #3c639d;
+    box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 300;
@@ -126,17 +144,18 @@ main{
     #login-btn:hover{
         background: #f4f4f2;
         color: #495464;
-        border: 1px solid #495464;
+        /* border: 1px solid #495464; */
     }
     #login-btn:active{
         box-shadow: inset 1px 1px 2px #49546461;
     }
+/* #endregion ___Login_Buttpn___ */
 
 
-
-    /* ___Main_Body */
+/* #region __Main_Body */
 #main-body-cont{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding-top: 2rem;
 }
@@ -147,8 +166,71 @@ main{
     width: 40%;
 }
 
+/* #region __Home_Page___ */
+#main-body-cont.home{
+    margin-top: 10rem;
+}
+.home-banner-sec{
+    width: 45%;
+    color: white;
+    max-width: 320px;
+    margin-right: 5rem;
+    background-color: #4ed2d21a;
+    padding: 2rem;
+    box-shadow: inset 1px 1px 10px 2px #020b1f;
+    backdrop-filter: blur(1px);
+    height: fit-content;
+}
+    .home-banner-sec.left {
+        margin-left: 1rem;
+        margin-top: -5rem;
+    }
+    .home-banner-sec.right {
+        width: 30%;
+        margin-top: 5rem;
+    }
 
-/*--- Featured Album Sec--- */
+.home-banner-header{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .06556rem;
+}
+    .home-banner-sec.left .home-banner-header{
+        text-align: center;
+    }
+
+.home-banner-subtitle{
+    font-weight: 500;
+    margin-top: -7px;
+    text-align: end;
+    font-size: .8em;
+    padding-right: 5px;
+}
+.home-banner-social-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -.5rem; */
+    margin-bottom: -.75rem;
+    /* padding: 0 3rem; */
+}
+.home-banner-social-img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    padding: 0;
+    margin: 0 -.25rem;
+    cursor: pointer;
+    opacity: .9;
+}
+.home-banner-paragraph{
+    text-align: justify;
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+/* #endregion __Home_Page___ */
+
+/*#region --- Featured Album Sec--- */
 #featured-div-header{
     margin-bottom: .5rem;
     opacity: .7;
@@ -178,8 +260,7 @@ main{
     font-weight: 300;
     font-size: .9em;
 }
-/*--- Featured Album Sec--- */
-
+/*#endregion --- Featured Album Sec--- */
 
 /*--- Featured Aritist Sec--- */
 
@@ -285,7 +366,7 @@ main{
     font-weight: 300;
 }
 /*--- Recently Added Sec--- */
-
+/* #endregion __Main_Body */
 
 /*--- Trending Now Sec--- */
     #trending-now-div-header{
@@ -371,10 +452,15 @@ main{
 /* #region Footer / Player */
 #player{
     position: absolute;
+    padding: 1rem;
+    box-sizing: border-box;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #e8e8e8;
+    background: #0a2c3ed9;
+    backdrop-filter: blur(3px);
+    color: #a8cefde3;
+    box-shadow: 4px 0 2px 0 #022030fa;
 }
 
 
@@ -390,7 +476,7 @@ main{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    margin-top: 1rem;
     box-sizing: border-box;
 }
 #track-info-cont{
@@ -398,10 +484,10 @@ main{
     align-items: center;
 }
 #player-track-name{
-    font-weight: bold;
+    font-weight: 500;
 }
 #player-track-artists{
-    font-size: .9em;
+    font-size: .82em;
     font-weight: 300;
 }
 .track-art{
@@ -411,13 +497,41 @@ main{
     border-radius: 5px;
 }
 .player-control-img{
-    width: 27px;
+    cursor: pointer;
+    width: 20px;
     margin-right: 10px;
     opacity: .7;
+    object-fit: contain;
 }
+    .player-control-img.play{
+        width: 40px;
+        opacity: .9;
+    }
+    .player-control-img.previous,
+    .player-control-img.next{
+        width: 31px;
+        opacity: .8;
+    }
+    .player-control-img.previous{
+        margin-left: 1rem;
+        margin-right: 1.25rem;
+    }
+    .player-control-img.next {
+        margin-left: 1.25rem;
+        margin-right: 1rem;
+    }
+    .player-control-img.repeat,
+    .player-control-img.shuffle,
+    .player-control-img.play{
+        margin-right: 0;
+    }
 #player-volume-controls-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+#player-controls-controls{
+    display: flex;
     align-items: center;
 }
 /* #endregion Footer / Player */
