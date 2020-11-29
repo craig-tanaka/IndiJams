@@ -1,3 +1,4 @@
+/* Todo: restructure css */
 *{
     margin: 0;
 }
@@ -158,7 +159,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 #main-main-section{
     width: 60%;
@@ -235,6 +236,86 @@ main{
 }
 /* #endregion __Home_Page___ */
 
+/* #region ---Songs page ------ */
+.featured-tracks-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    /* border-radius: 5px; */
+}
+.featured-track{
+    width: 12rem;
+    text-align: center;
+    margin-bottom: .1rem;
+    cursor: pointer;
+    position: relative;
+}
+.featured-track-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    /* pointer-events: none; */
+    background-color: #101e6352;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured-track-name{
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: -3px;
+}
+.featured-track-artist{
+    font-weight: 300;
+    font-size: 14px;
+}
+.featured-track-overlay-buttons-row{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: .75rem;
+    padding: 0 .75rem;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: revert;
+    opacity: 0;
+    transition: opacity 800ms;
+}
+    .featured-track-overlay-buttons-row:hover,
+    .featured-track-overlay-buttons-row:focus{
+        opacity: 1;
+    }
+.featured-track-overlay-btn{
+    width: 2rem;
+    cursor: pointer;
+}
+.featured-track-overlay-btn.play{
+    margin-right: .5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.featured-track-overlay-btn.like{
+    margin-left: .5rem;
+}
+
+/* ___Recently Added Tracks */
+#recent-tracks-div{
+    margin-top: 2rem;
+}
+#recent-tracks-div-{
+    opacity: .7;
+}
+
+/* #endregion ---Songs page ------ */
+
 /*#region --- Featured Album Sec--- */
 #featured-div-header{
     margin-bottom: .5rem;
@@ -254,13 +335,13 @@ main{
     margin-right: 1rem;
     border-radius: 5px;
 }
-#featured-album-name{
+#featured-div-name{
     margin-bottom: .5rem;
 }
-#featured-album-artist {
+#featured-div-artist {
     margin-bottom: 1rem;
 }
-#featured-album-description {
+#featured-div-description {
     margin-bottom: 1rem;
     text-align: justify;
     font-weight: 300;
@@ -268,9 +349,7 @@ main{
 }
 /*#endregion --- Featured Album Sec--- */
 
-/*--- Featured Aritist Sec--- */
-
-/*--- Masonry Styling--- */
+/*#region --- Albums Masonry Styling--- */
 .grid-item {
     --masonry-height: 200px;
     --masonry-width: 200px;
@@ -282,14 +361,16 @@ main{
     overflow: hidden;
     position: relative;
 }
-
 .grid-item--width2 {
     width: calc(var(--masonry-width) * 2);
 }
-
 .grid-item--height2 {
     height: calc(var(--masonry-height) * 2);
 }
+/*#endregion --- Albums Masonry Styling--- */
+
+/* #region--- Featured Aritist Sec--- */
+
 
 
 .featured-artist-artist{
@@ -334,12 +415,10 @@ main{
     font-family: 'Playfair Display';
 }
 
+/* #endregion--- Featured Aritist Sec--- */
 
 
-/*--- Featured Aritist Sec--- */
-
-
-/*--- Recently Added Sec--- */
+/* #region --- Recently Added Sec--- */
 #recently-added-div{
     margin-top: 4rem;
 }
@@ -371,14 +450,15 @@ main{
     font-size: .9em;
     font-weight: 300;
 }
-/*--- Recently Added Sec--- */
+/* #endregion --- Recently Added Sec--- */
+
 /* #endregion __Main_Body */
 
-/*--- Trending Now Sec--- */
+/* #region --- Trending Now Sec--- */
     #trending-now-div-header{
         opacity: .7;
     }
-    .trending-now-album{
+    .trending-now-album,.recent-tracks-track{
         display: flex;
         align-items: center;
         width:90%;
@@ -390,33 +470,38 @@ main{
         position: relative;
         border-radius: 15px;
     }
-    .trending-now-album-vector{
+    .trending-now-album-vector,
+    .recent-tracks-track-vector {
         width: 2rem;
         margin-right: 1rem;
         margin-left: 1rem;
         cursor: pointer;
     }
-    .trending-now-album-info{
+    .trending-now-album-info,
+    .recent-tracks-track-info{
         margin-right: 1rem;
     }
-    .trending-now-album-name{
+    .trending-now-album-name,
+    .recent-tracks-track-name{
         font-weight: bold;
     }
-    .trending-now-album-artist{
+    .trending-now-album-artist,
+    .recent-tracks-track-artist{
         font-weight: 300;
         font-size: .9em;
     }
-    .trending-now-additional-info{
+    .trending-now-additional-info,
+    .recent-tracks-track-additional-info{
         position: absolute;
         right: 0;
         margin-right: 1rem;
         font-weight: 300;
         font-size: .9em;
     }
-/*--- Trending Now Sec--- */
+/* #endregion--- Trending Now Sec--- */
 
 
-/*--- Popular Artsits Sec--- */
+/* #region --- Popular Artsits Sec--- */
 #popular-artists-div{
     margin-top: 3rem;
 }
@@ -451,7 +536,7 @@ main{
     opacity: .3;
     width: 1.5rem;
 }
-/*--- Popular Artsits Sec--- */
+/* #endregion--- Popular Artsits Sec--- */
 
 /* #endregion main styling */
 
@@ -473,8 +558,12 @@ main{
 
 #player-progress{
     width: 100%;
-    box-sizing: border-box;
-    /* padding: 0; */
+    height: 1rem;
+    /* box-sizing: border-box; */
+    padding: 0.2rem;
+    box-shadow: inset 1px 1px 0px -1px #000000e0;
+    /* border-radius: 5px; */
+    /* background: black; */
 }
 
 

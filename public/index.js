@@ -25,8 +25,6 @@ document.querySelectorAll('.nav-group-item').forEach(el =>{
     el.addEventListener('click', e => {
         // Todo: Change Url Locations
 
-        if (e.currentTarget.id === 'nav-songs-link'){return}
-
         if (e.currentTarget.id === 'nav-home-link') { // Change_To_Home_Page
 
             if (!mainBodyContainer.classList.contains('home')) {
@@ -63,6 +61,9 @@ document.querySelectorAll('.nav-group-item').forEach(el =>{
             if (e.currentTarget.id === 'nav-artist-link') {
                 mainBodyContainer.innerHTML = artistView;
             }
+            if (e.currentTarget.id === 'nav-songs-link') {
+                mainBodyContainer.innerHTML = songsView;
+        }
         }
     })
 })
@@ -78,9 +79,9 @@ const artistView = `<section id="main-main-section">
                                         <img src="./images/album covers/Shoot for the Stars Aim for the Moon_Pop Smoke.jpg" alt=""
                                             id="featured-album-cover-art">
                                         <div id="featured-album-text-cont">
-                                            <h3 id="featured-album-name">Shoot For The Stars, Aim For The Moon</h3>
-                                            <p id="featured-album-artist">Pop Smoke</p>
-                                            <p id="featured-album-description">Shoot for the Stars, Aim for the Moon is the debut studio
+                                            <h3 id="featured-div-name">Shoot For The Stars, Aim For The Moon</h3>
+                                            <p id="featured-div-artist">Pop Smoke</p>
+                                            <p id="featured-div-description">Shoot for the Stars, Aim for the Moon is the debut studio
                                                 album by
                                                 American rapper Pop Smoke, and first posthumous project following his murder from a home
                                                 invasion on
@@ -342,4 +343,187 @@ const homeView = `<div class="home-banner-sec left">
                                     <p class="home-banner-paragraph">We caught up with upcomin wonder-boy Bobbie Luck and we gotta say in all ways possible it was different from what we expected. We had expected a longer interview but he just called to an emergency show and we forced to cut down our interview to a short but extremely intriguing chat.</p>
                                 </div>`
 
+const  songsView = `<section id="main-main-section">
+                <div id="featured-div">
+                    <h2 id="featured-div-header">Featured Tracks</h2>
+                    <div id="featured-div-body">
+                        <img src="./images/album covers/Shoot for the Stars Aim for the Moon_Pop Smoke.jpg" alt=""
+                            id="featured-album-cover-art">
+                        <div id="featured-album-text-cont">
+                            <h3 id="featured-div-name">Shoot For The Stars, Aim For The Moon</h3>
+                            <p id="featured-div-artist">Pop Smoke</p>
+                            <p id="featured-div-description">Shoot for the Stars, Aim for the Moon is the debut studio
+                                album by
+                                American rapper Pop Smoke, and first posthumous project following his murder from a home
+                                invasion on
+                                February 19, 2020.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-tracks-row">
+                    <div class="featured-track">
+                        <img src="./images/album covers/blame-it-on-baby.jpg" class="recenty-added-album-img">
+                        <div class="featured-track-text">
+                            <p class="featured-track-name">Blame It On Baby</p>
+                            <p class="featured-track-artist">DaBaby</p>
+                        </div>
+                        <div class="featured-track-overlay-buttons-row">
+                            <img src="./images/play-vector.png" alt="" class="featured-track-overlay-btn play">
+                            <img src="./images/liked-vector.png" alt="" class="featured-track-overlay-btn like">
+                        </div>
+                    </div>
+                    <div class="featured-track">
+                        <img src="./images/album covers/welcome-to-the-o-block.jpg" class="recenty-added-album-img">
+                        <div class="featured-track-text">
+                            <p class="featured-track-name">Welcome To The O</p>
+                            <p class="featured-track-artist">King Von</p>
+                        </div>
+                        <div class="featured-track-overlay-buttons-row">
+                            <img src="./images/play-vector.png" alt="" class="featured-track-overlay-btn play">
+                            <img src="./images/liked-vector.png" alt="" class="featured-track-overlay-btn like">
+                        </div>
+                    </div>
+                    <div class="featured-track">
+                        <img src="./images/album covers/wunna.webp" class="recenty-added-album-img">
+                        <div class="featured-track-text">
+                            <p class="featured-track-name">Wunna</p>
+                            <p class="featured-track-artist">Gunna</p>
+                        </div>
+                        <div class="featured-track-overlay-buttons-row">
+                            <img src="./images/play-vector.png" alt="" class="featured-track-overlay-btn play">
+                            <img src="./images/liked-vector.png" alt="" class="featured-track-overlay-btn like">
+                        </div>
+                    </div>
+                    <div class="featured-track">
+                        <img src="./images/album covers/welcome-to-the-o-block.jpg" class="recenty-added-album-img">
+                        <div class="featured-track-text">
+                            <p class="featured-track-name">Welcome To The O</p>
+                            <p class="featured-track-artist">King Von</p>
+                        </div>
+                        <div class="featured-track-overlay-buttons-row">
+                            <img src="./images/play-vector.png" alt="" class="featured-track-overlay-btn play">
+                            <img src="./images/liked-vector.png" alt="" class="featured-track-overlay-btn like">
+                        </div>
+                    </div>
+                    <div class="featured-track">
+                        <img src="./images/album covers/blame-it-on-baby.jpg" class="recenty-added-album-img">
+                        <div class="featured-track-text">
+                            <p class="featured-track-name">Blame It On Baby</p>
+                            <p class="featured-track-artist">DaBaby</p>
+                        </div>
+                        <div class="featured-track-overlay-buttons-row">
+                            <img src="./images/play-vector.png" alt="" class="featured-track-overlay-btn play">
+                            <img src="./images/liked-vector.png" alt="" class="featured-track-overlay-btn like">
+                        </div>
+                    </div>
+                    <div class="featured-track">
+                        <img src="./images/album covers/welcome-to-the-o-block.jpg" class="recenty-added-album-img">
+                        <div class="featured-track-text">
+                            <p class="featured-track-name">Welcome To The O</p>
+                            <p class="featured-track-artist">King Von</p>
+                        </div>
+                        <div class="featured-track-overlay-buttons-row">
+                            <img src="./images/play-vector.png" alt="" class="featured-track-overlay-btn play">
+                            <img src="./images/liked-vector.png" alt="" class="featured-track-overlay-btn like">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-side-section">
+                <div id="trending-now-div">
+                    <h2 id="trending-now-div-header">Trending Now</h2>
+                    <div id="trending-div-body">
+                        <div class="trending-now-album">
+                            <img src="./images/play-now-trending-vector.png" class="trending-now-album-vector">
+                            <div class="trending-now-album-info">
+                                <p class="trending-now-album-name">
+                                    Legends Never Die
+                                </p>
+                                <p class="trending-now-album-artist">
+                                    Juice WRLD
+                                </p>
+                            </div>
+                            <p class="trending-now-additional-info">
+                                22 Tracks
+                            </p>
+                        </div>
+                        <div class="trending-now-album">
+                            <img src="./images/play-now-trending-vector.png" class="trending-now-album-vector">
+                            <div class="trending-now-album-info">
+                                <p class="trending-now-album-name">
+                                    Savage Mode II
+                                </p>
+                                <p class="trending-now-album-artist">
+                                    21 Savage & Metro Boomin
+                                </p>
+                            </div>
+                            <p class="trending-now-additional-info">
+                                15 Tracks
+                            </p>
+                        </div>
+                        <div class="trending-now-album">
+                            <img src="./images/play-now-trending-vector.png" class="trending-now-album-vector">
+                            <div class="trending-now-album-info">
+                                <p class="trending-now-album-name">
+                                    My Turn
+                                </p>
+                                <p class="trending-now-album-artist">
+                                    Lil Baby
+                                </p>
+                            </div>
+                            <p class="trending-now-additional-info">
+                                20 Tracks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="recent-tracks-div">
+                    <h2 id="recent-tracks-div-header">Recently Added</h2>
+                    <div id="recent-tracks-div-body">
+                        <div class="recent-tracks-track">
+                            <img src="./images/play-now-trending-vector.png" class="recent-tracks-track-vector">
+                            <div class="recent-tracks-track-info">
+                                <p class="recent-tracks-track-name">
+                                    Legends Never Die
+                                </p>
+                                <p class="recent-tracks-track-artist">
+                                    Juice WRLD
+                                </p>
+                            </div>
+                            <p class="recent-tracks-track-additional-info">
+                                22 Tracks
+                            </p>
+                        </div>
+                        <div class="recent-tracks-track">
+                            <img src="./images/play-now-trending-vector.png" class="recent-tracks-track-vector">
+                            <div class="recent-tracks-track-info">
+                                <p class="recent-tracks-track-name">
+                                    Savage Mode II
+                                </p>
+                                <p class="recent-tracks-track-artist">
+                                    21 Savage & Metro Boomin
+                                </p>
+                            </div>
+                            <p class="recent-tracks-track-additional-info">
+                                15 Tracks
+                            </p>
+                        </div>
+                        <div class="recent-tracks-track">
+                            <img src="./images/play-now-trending-vector.png" class="recent-tracks-track-vector">
+                            <div class="recent-tracks-track-info">
+                                <p class="recent-tracks-track-name">
+                                    My Turn
+                                </p>
+                                <p class="recent-tracks-track-artist">
+                                    Lil Baby
+                                </p>
+                            </div>
+                            <p class="recent-tracks-track-additional-info">
+                                20 Tracks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>`
  // #endregion Html Views
