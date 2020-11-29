@@ -3,6 +3,8 @@
 // Variable & Constant declaration
 const mainBodyContainer = document.querySelector('#main-body-cont');
 const mainElement = document.querySelector('main');
+const searchInput = document.querySelector('#search-input');
+const searchIcon = document.querySelector('#search-vector');
 
 // Masonry Grid Initialization
 try {
@@ -21,16 +23,36 @@ catch{}
 // Sidebar Navigation Links_____
 document.querySelectorAll('.nav-group-item').forEach(el =>{
     el.addEventListener('click', e => {
-        if (e.currentTarget.id === 'nav-home-link') {
+        // Todo: Change Url Locations
+
+        if (e.currentTarget.id === 'nav-songs-link'){return}
+
+        if (e.currentTarget.id === 'nav-home-link') { // Change_To_Home_Page
+
             if (!mainBodyContainer.classList.contains('home')) {
                 mainBodyContainer.classList.add('home');
             }
+
+            // change search to suit new color theme
+            searchInput.style.color = '#ffffffc7';
+            searchIcon.setAttribute('src', './images/search-vector.png');
+
+            // Add Home Background Image & Background Color
             mainElement.style.backgroundImage = `url('./images/home images/pexels-eric-esma-894156.jpg')`
             mainElement.style.backgroundColor = `#1c71cac7`;
+
+            //Display home view
             mainBodyContainer.innerHTML = homeView;
-        } else {
-             mainElement.style.backgroundImage = `initial`
-             mainElement.style.backgroundColor = `initial`;
+
+        } else { // Change_From_Home_Page
+
+            // change search to suit new color theme
+            searchInput.style.color = '#031852d6';
+            searchIcon.setAttribute('src', './images/search-vector__dark.png');
+
+            // Remove Home Background Image & Background Color
+            mainElement.style.backgroundImage = `initial`
+            mainElement.style.backgroundColor = `initial`;
 
             if (mainBodyContainer.classList.contains('home')) {
                 mainBodyContainer.classList.remove('home');

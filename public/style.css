@@ -3,10 +3,10 @@
 }
 
 html{
-    background-image: url('./images/background.png');
-    background-size: 300px;
-    background-color: #3f85b712;
-    background-blend-mode: soft-light;
+    background-image: url('./images/back/funky-lines.png');
+    background-size: 280px;
+    background-color: #c1553026;
+    background-blend-mode: luminosity;
     color: #495464;
     font-family: 'Raleway', arial;
 }
@@ -99,7 +99,7 @@ main{
 /* #region __Search__ */
 #search-cont {
     width: 80%;
-    background: #1e58bf12;
+    background: #1e58bf0a;
     backdrop-filter: blur(1px);
     padding: .75rem 1rem;
     border-radius: 15px;
@@ -110,7 +110,7 @@ main{
 #search-vector {
         width: 20px;
         margin-right: 7px;
-        /* opacity: .7; */
+        opacity: .7;
         cursor: pointer;
 }
 #search-input{
@@ -133,7 +133,7 @@ main{
     font-family: 'Raleway',
     sans-serif;
     margin-right: 2rem;
-    background: #4954675e;
+    background: #0f2d61ba;
     color: #f4f4f2;
     border: 2px solid #3f86b8;
     box-sizing: border-box;
@@ -158,18 +158,22 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 #main-main-section{
     width: 60%;
+    margin-left: 1rem;
 }
 #main-side-section{
+    box-sizing: border-box;
     width: 40%;
+    max-width: 360px;
+    margin-left: 2rem;
 }
 
 /* #region __Home_Page___ */
 #main-body-cont.home{
-    margin-top: 10rem;
+    margin-top: 12rem;
 }
 .home-banner-sec{
     width: 45%;
