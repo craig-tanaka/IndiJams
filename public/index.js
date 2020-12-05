@@ -62,7 +62,7 @@ document.querySelectorAll('.nav-group-item').forEach(el =>{
                 mainBodyContainer.innerHTML = artistView;
             }
             if (e.currentTarget.id === 'nav-songs-link') {
-                mainBodyContainer.innerHTML = songsView;
+                mainBodyContainer.innerHTML = songsViewfi;
         }
         }
     })
