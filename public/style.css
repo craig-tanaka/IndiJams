@@ -20,7 +20,7 @@ body{
 /* #region Aside/ Sidebar */
 #sidebar{
     width: 15rem;
-    box-shadow: 1px 0 10px 3px #7fb0c773;
+    /* box-shadow: 1px 0 10px 3px #7fb0c773; */
     height: 100vh;
     padding: 1rem;
     box-sizing: border-box;
@@ -171,6 +171,7 @@ main{
     max-width: 360px;
     margin-left: 2rem;
 }
+/* #endregion __Main_Body */
 
 /* #region __Home_Page___ */
 #main-body-cont.home{
@@ -235,6 +236,41 @@ main{
     line-height: 1.5rem;
 }
 /* #endregion __Home_Page___ */
+
+/* #region __Overlay_Style__ */
+.overlay-view-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overlay-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3f86b8c4;
+}
+
+.overlay-view-main{
+    position: absolute;
+    background-image: url('./images/background.png');
+    background-color: #2d91d9;
+    background-blend-mode: multiply;
+    margin-top: -5rem;
+    color: #ffffffed;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 0 #05316338;
+}
+/* #endregion __Overlay_Style__ */
 
 /* #region ---Songs page ------ */
 .featured-tracks-row {
@@ -369,6 +405,77 @@ main{
 }
 /*#endregion --- Albums Masonry Styling--- */
 
+/* #region __Album_Overlay_View */
+.overlay-view-main.album{
+    display: flex;
+}
+.overlay-view-main.album > div{
+    width: 100%;
+}
+
+.overlay-view-main.album .album-view-left{
+    box-shadow: 1px 0px 2px 0 #091b413b;
+}
+.overlay-view-main.album .album-cover{
+    width: 100%;
+}
+.overlay-view-main.album .album-title{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Playfair Display',
+        serif;
+}
+.overlay-view-main.album .album-artist {
+    font-weight: 400;
+    text-align: center;
+    margin-top: -5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.overlay-view-main.album .album-description {
+    text-align: justify;
+    font-weight: 100;
+    padding: 10px 20px;
+    line-height: 1.7;
+    letter-spacing: 0.7px;
+    word-spacing: 4px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+.overlay-view-main.album .album-view-right {
+    padding: 1rem;
+}
+.overlay-view-main.album .tracklist-header{
+        font-family: 'Playfair Display',
+        serif;
+}
+.overlay-view-main.album .tracklist {
+    padding-inline-start: 1rem;
+}
+.overlay-view-main.album .tracklist-item {
+    padding: 1rem 0;
+    font-size: 13px;
+    font-weight: 100;
+}
+.overlay-view-main.album .album-play {
+    background-color: #2d91d9;
+    outline: none;
+    border-color: #8bcdf9;
+    padding: .5rem;
+    border-width: thick;
+    border-radius: 5px;
+    color: white;
+    width: 30%;
+    margin: 0 35%;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-family: 'Playfair Display',
+        serif;
+}
+/* #endregion __Album_Overlay_View */
+
 /* #region--- Featured Aritist Sec--- */
 
 
@@ -452,7 +559,6 @@ main{
 }
 /* #endregion --- Recently Added Sec--- */
 
-/* #endregion __Main_Body */
 
 /* #region --- Trending Now Sec--- */
     #trending-now-div-header{
@@ -546,13 +652,14 @@ main{
     position: absolute;
     padding: 1rem;
     box-sizing: border-box;
+    border-right: 1px solid white;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #1c6084ad;
+    background: #4086b8;
     backdrop-filter: blur(3px);
     color: #a8cefde3;
-    box-shadow: inset 0px 2px 6px 0 #0220305e;
+    /* box-shadow: inset 0px 2px 6px 0 #0220303d; */
 }
 
 

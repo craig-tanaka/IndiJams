@@ -5,6 +5,8 @@ const mainBodyContainer = document.querySelector('#main-body-cont');
 const mainElement = document.querySelector('main');
 const searchInput = document.querySelector('#search-input');
 const searchIcon = document.querySelector('#search-vector');
+const overlayContainer = document.querySelector('.overlay-view-container');
+const overlayOverlay = document.querySelector('.overlay-overlay');
 
 // Masonry Grid Initialization
 try {
@@ -68,6 +70,11 @@ document.querySelectorAll('.nav-group-item').forEach(el =>{
     })
 })
 
+overlayOverlay.addEventListener('click', eve => {
+    overlayContainer.style.display = 'none';
+    overlayOverlay.style.display = 'none';
+    console.log('clicked');
+})
 // #endregion Event Listeners
 
 
