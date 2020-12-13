@@ -239,17 +239,19 @@ main{
 
 /* #region __Overlay_Style__ */
 .overlay-view-container{
+    /* display: none; */
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
 }
 .overlay-overlay {
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -258,12 +260,13 @@ main{
     background-color: #3f86b8c4;
 }
 
-.overlay-view-main{
+.overlay-view-main {
+    display: flex;
     position: absolute;
     background-image: url('./images/background.png');
     background-color: #2d91d9;
     background-blend-mode: multiply;
-    margin-top: -5rem;
+    margin-top: -8rem;
     color: #ffffffed;
     width: 80%;
     margin-left: 10%;
@@ -406,9 +409,7 @@ main{
 /*#endregion --- Albums Masonry Styling--- */
 
 /* #region __Album_Overlay_View */
-.overlay-view-main.album{
-    display: flex;
-}
+.overlay-view-main.album{display: flex;}
 .overlay-view-main.album > div{
     width: 100%;
 }
@@ -534,7 +535,7 @@ main{
     opacity: .7;
 }
 #recently-added-div-body{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     /* padding: 2rem 0; */
     margin-right: 2rem;
@@ -564,7 +565,7 @@ main{
     #trending-now-div-header{
         opacity: .7;
     }
-    .trending-now-album,.recent-tracks-track{
+    .trending-now-item,.recent-tracks-track{
         display: flex;
         align-items: center;
         width:90%;
@@ -576,22 +577,22 @@ main{
         position: relative;
         border-radius: 15px;
     }
-    .trending-now-album-vector,
+    .trending-now-item-vector,
     .recent-tracks-track-vector {
         width: 2rem;
         margin-right: 1rem;
         margin-left: 1rem;
         cursor: pointer;
     }
-    .trending-now-album-info,
+    .trending-now-item-info,
     .recent-tracks-track-info{
         margin-right: 1rem;
     }
-    .trending-now-album-name,
+    .trending-now-item-title,
     .recent-tracks-track-name{
         font-weight: bold;
     }
-    .trending-now-album-artist,
+    .trending-now-item-subtitle,
     .recent-tracks-track-artist{
         font-weight: 300;
         font-size: .9em;
@@ -608,34 +609,34 @@ main{
 
 
 /* #region --- Popular Artsits Sec--- */
-#popular-artists-div{
+#recently-added-div{
     margin-top: 3rem;
 }
-#popular-artists-div-header{
+#recently-added-div-header{
     opacity: .7;
 }
-.popular-artist{
+.recently-added-div-item{
     margin-top: 2rem;
     margin-left: 1rem;
     display: flex;
     align-items: center;
     position: relative;
 }
-.popular-artist-img{
+.recently-added-div-item-img{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 1rem;
 }
-.popular-artist-name{
+.recently-added-div-item-name{
     font-weight: bold;
 }
-.popular-artist-followers{
+.recently-added-div-item-followers{
     font-weight: 300;
     font-size: .8em;
 }
-.popular-artist-dots {
+.recently-added-div-item-dots {
     position: absolute;
     right: 0;
     margin-right: 2rem;
